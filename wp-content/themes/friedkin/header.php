@@ -22,6 +22,8 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+	<script type="text/javascript" src="//use.typekit.net/pel3ojb.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
@@ -73,7 +75,40 @@
 ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="<?php echo  strtolower(str_replace(' ','-',get_the_title())); ?>">
+	<?php $post_image_id = get_post_thumbnail_id($post_to_use->ID);
+			if ($post_image_id) {
+				$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
+				if ($thumbnail) (string)$thumbnail = $thumbnail[0];
+			} ?>
+	<div id="header">
+		<div class="mid-cont">
+			<a id="logo" href="/"></a>
+			<div id="nav"><?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></div>
+			<?php if (is_front_page()) { ?>
+				<div id="home-headline"><div class="mid-cont"><?php echo do_shortcode(get_post_meta($post->ID, 'headline', $single = true)) ?></div></div>
+			<?php } ?>
+		</div>		
+	</div>
+	<div id="banner" style="background: url('<?php echo $thumbnail; ?>') no-repeat;"></div>
+	<?php if (!is_front_page()) { ?>
+		<?php if (get_post_meta($post->ID, 'headline', true)) { ?>
+		<div id="headline">
+			<div class="mid-cont">
+					<?php echo do_shortcode(get_post_meta($post->ID, 'headline', $single = true)) ?>
+			</div>
+		</div>
+	<?php } } ?> 
+	<?php if ( $post->post_parent == '12' ){ ?>
+		<div id="headline">
+			<div class="mid-cont">
+					<?php the_title(); ?>
+			</div>
+		</div>		
+	<?php }  ?>
+	
+	<div id="main-wrapper">
+		<div class="mid-cont">
+	
 
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 

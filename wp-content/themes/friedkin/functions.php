@@ -342,7 +342,7 @@ if ( ! function_exists( 'twentyeleven_continue_reading_link' ) ) :
  * Returns a "Continue Reading" link for excerpts
  */
 function twentyeleven_continue_reading_link() {
-	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) . '</a>';
+	return ' ';
 }
 endif; // twentyeleven_continue_reading_link
 
@@ -668,4 +668,9 @@ add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10, 3 );
 function remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
     $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
     return $html;
+}
+
+add_action( 'init', 'my_add_excerpts_to_pages' );
+function my_add_excerpts_to_pages() {
+     add_post_type_support( 'page', 'excerpt' );
 }
