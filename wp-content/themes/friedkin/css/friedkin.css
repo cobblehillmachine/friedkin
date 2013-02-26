@@ -46,7 +46,7 @@ textarea { overflow: auto; }
 
 /*BACKGROUND*/
 #background .wrap {float:left; width:620px;}
-#side-button {width:290px; background-size:105px; height:44px; padding-top:20px; font-size:16px;}
+#side-button {width:290px; background-size:105px; height:44px; padding-top:19px; font-size:16px;}
 #side-button:hover {background-size:53px;}
 #side-button .arrow {width:21px; height:20px; background-size:20px; margin:2px 20px 0 0;}
 
