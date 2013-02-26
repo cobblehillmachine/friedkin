@@ -6,6 +6,7 @@ $(document).ready(function() {
 	$('p').each(function(i) {if ((i + 1) % 2 == 0) {$(this).addClass('even');}});
 	$('#investments .sub-cont').each(function(i) {if ((i + 1) % 4 == 0) {$(this).addClass('last');}});
 	$('p').eq(0).addClass('first').end();
+	$(".sub-cont:last").each(function(){$(this).addClass("last")});
 	
 });
 

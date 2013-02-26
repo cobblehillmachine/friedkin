@@ -22,6 +22,7 @@ textarea { overflow: auto; }
 .line {background:#4b4b4b; width:100%; height:1px; float:left; margin-bottom:45px;}
 .image img {border:5px solid #bababa; max-width:100%; max-height:100%;}
 .button span {float:left;}
+.sub-cont.last {margin-bottom:0 !important;}
 
 /*HEADER*/
 #header {height:105px; border-bottom:1px solid #779d84;}
