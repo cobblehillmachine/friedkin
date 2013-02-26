@@ -12,7 +12,7 @@ textarea { overflow: auto; }
 #home #banner {height:410px;}
 #headline {height:60px; background:#137139; color:#fff; font-size:30px; padding-top:20px;}
 #main-wrapper {padding:40px 0;}
-#main-wrapper .mid-cont {padding-left:10px; width:960px;}
+#main-wrapper .mid-cont {padding-left:5px; width:960px;}
 .section-title {font-size:20px; float:left; margin-bottom:20px;}
 .last {margin-right:0 !important;}
 .content {float:left; line-height:20px;}
