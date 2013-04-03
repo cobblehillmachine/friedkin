@@ -24,7 +24,7 @@ wp-content/gallery/*
 sql/*
 sql/
 wp-config.php
-
+.htpasswd
 vendor/cache
 
 # Acts as Indexed

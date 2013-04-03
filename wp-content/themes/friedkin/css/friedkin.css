@@ -52,7 +52,7 @@ textarea { overflow: auto; }
 #side-button .arrow {width:21px; height:20px; background-size:20px; margin:2px 20px 0 0;}
 
 /*PHILOSOPHY*/
-#philosophy .wrap .content p, #sub-investments .content p, #media .content p {float:left; width:472px; margin:0 15px 50px 0;}
+#philosophy .wrap .content p, #sub-investments .content p, #media .content p {float:left; width:472px; margin:0 15px 25px 0;}
 #philosophy .wrap .content p.even, #sub-investments .content p.even, #media .content p.even {width:460px; margin-right:0;}
 #philosophy .sub-cont {float:left; width:460px; margin-right:20px;}
 
