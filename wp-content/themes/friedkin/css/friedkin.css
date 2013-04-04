@@ -1,6 +1,6 @@
 body {margin:0; padding:0; width:100%; min-width:1050px; font:normal 12px "proxima-nova-soft",sans-serif; color:#4b4b4b; background:#fff; letter-spacing:1px;}
 a {text-decoration:none; color:#137139;}
-a:hover, #nav .current-menu-item  a, #nav .current-page-ancestor a {color:#4b4b4b;}
+a:hover, #nav .current-menu-item  a, #nav .current-page-ancestor a, #header #nav .current-menu-item  .sub-menu a:hover {color:#4b4b4b;}
 a img {border:0;}
 ul {list-style:none; padding:0; margin:0;}
 input {webkit-appearance:none;}
@@ -26,11 +26,14 @@ textarea { overflow: auto; }
 
 /*HEADER*/
 #header {height:105px; border-bottom:1px solid #779d84;}
-#header #logo {float:left; background:url(../images/logo.png) no-repeat; height:38px; width:192px; margin:30px 190px 0 0;}
-#header #nav {float:left; width:585px; margin-top:30px;}
+#header #logo {float:left; background:url(../images/logo.png) no-repeat; height:38px; width:192px; margin-top:30px;}
+#header #nav {float:right; margin-top:30px;}
 #header ul li {float:left; margin-left:12px; background:url(../images/divider.png) no-repeat 0 0; }
 #header ul li a {float:left; font-size:13px;  height:10px; height:35px; padding:3px 0 0 25px;}
 #header ul li.first {background:none;}
+#header #nav .sub-menu {display:none; position:absolute; top:60px; background:#fff; width:515px; left:430px; padding-top:25px;}
+#header #nav .sub-menu li {background:none; margin-left:10px;}
+#header #nav .current-menu-item  .sub-menu a {color:#137139; font-size:12px;}
 
 /*FOOTER*/
 #footer {height:110px; background:url(../images/footer-bg.gif)  repeat-x #c9c9c9;}

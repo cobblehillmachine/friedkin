@@ -674,3 +674,11 @@ add_action( 'init', 'my_add_excerpts_to_pages' );
 function my_add_excerpts_to_pages() {
      add_post_type_support( 'page', 'excerpt' );
 }
+
+// Add Favicon //
+
+function diww_favicon() {
+	echo '<link rel="shortcut icon" type="image/x-icon" href="'.get_bloginfo('stylesheet_directory').'/favicon.ico" />';
+}
+add_action('wp_head', 'diww_favicon');
+add_action('admin_head', 'diww_favicon');
