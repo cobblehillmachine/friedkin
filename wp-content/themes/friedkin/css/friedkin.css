@@ -7,12 +7,11 @@ input {webkit-appearance:none;}
 p {margin:0 0 25px 0; float:left;}
 textarea { overflow: auto; }
 .mid-cont {position:relative; width:970px; margin:auto;}
-#main-wrapper, #footer, #headline {float:left; width:100%;}
-#banner {height:100%; /*background-size:cover !important;*/ position:fixed; top:105px; width:100%; z-index:-1;}
-/*#home #banner {height:410px;}*/
-#home #main-wrapper {margin-top:375px;}
-#headline {height:60px; background:#137139; color:#fff; font-size:30px; padding-top:20px; margin-top:375px;}
-#main-wrapper {padding:40px 0; background:#fff; opacity:.75; filter:alpha(opacity=75);}
+#header, #main-wrapper, #footer, #banner, #headline {float:left; width:100%;}
+#banner {height:335px; background-size:cover !important;}
+#home #banner {height:410px;}
+#headline {height:60px; background:#137139; color:#fff; font-size:30px; padding-top:20px;}
+#main-wrapper {padding:40px 0;}
 #main-wrapper .mid-cont {padding-left:5px; width:960px;}
 .section-title {font-size:20px; float:left; margin-bottom:20px;}
 .last {margin-right:0 !important;}
@@ -26,7 +25,7 @@ textarea { overflow: auto; }
 .sub-cont.last {margin-bottom:0 !important;}
 
 /*HEADER*/
-#header {height:105px; border-bottom:1px solid #779d84; position:fixed; width:100%; background:#fff; z-index:10;}
+#header {height:105px; border-bottom:1px solid #779d84;}
 #header #logo {float:left; background:url(../images/logo.png) no-repeat; height:38px; width:192px; margin-top:30px;}
 #header #nav {float:right; margin-top:30px;}
 #header ul li {float:left; margin-left:12px; background:url(../images/divider.png) no-repeat 0 0; }
@@ -37,7 +36,7 @@ textarea { overflow: auto; }
 #header #nav .current-menu-item  .sub-menu a {color:#137139; font-size:12px;}
 
 /*FOOTER*/
-#footer {height:110px; background:url(../images/footer-bg.gif)  repeat-x #c9c9c9; margin-top:500px;}
+#footer {height:110px; background:url(../images/footer-bg.gif)  repeat-x #c9c9c9;}
 #footer-logo {float:left; background:url(../images/logo.png) no-repeat; height:30px; width:120px; margin:30px 90px 0 0; background-size:120px;}
 #address-cont {float:left; margin-top:30px;}
 #address-cont span {float:left; margin-right:20px;}
@@ -45,7 +44,7 @@ textarea { overflow: auto; }
 #site-credit {float:right; margin-top:40px;}
 
 /*HOME*/
-#home-headline {font-size:48px; color:#fff; position:fixed; margin-top:150px; width:100%;}
+#home-headline {font-size:48px; color:#fff; float:left; margin-top:200px;}
 .home-box {float:left; width:290px; margin:20px 35px 0 0;}
 .home-box .content {min-height:105px;}
 
