@@ -25,6 +25,7 @@
 	<script type="text/javascript" src="//use.typekit.net/pel3ojb.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.fullscreenr.js"></script>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <meta name="format-detection" content="telephone=no">
@@ -80,16 +81,17 @@
 				$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
 				if ($thumbnail) (string)$thumbnail = $thumbnail[0];
 			} ?>
+	<?php if (is_front_page()) { ?>
+		<div id="home-headline"><div class="mid-cont"><?php echo do_shortcode(get_post_meta($post->ID, 'headline', $single = true)) ?></div></div>
+	<?php } ?>
 	<div id="header">
 		<div class="mid-cont">
 			<a id="logo" href="/"></a>
 			<div id="nav"><?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></div>
-			<?php if (is_front_page()) { ?>
-				<div id="home-headline"><div class="mid-cont"><?php echo do_shortcode(get_post_meta($post->ID, 'headline', $single = true)) ?></div></div>
-			<?php } ?>
 		</div>		
 	</div>
-	<div id="banner" style="background: url('<?php echo $thumbnail; ?>') no-repeat;"></div>
+	<!-- <div id="banner" style="background: url('<?php echo $thumbnail; ?>') no-repeat;"></div> -->
+	<div id="banner"><?php the_post_thumbnail('full'); ?></div>
 	<?php if (!is_front_page()) { ?>
 		<?php if (get_post_meta($post->ID, 'headline', true)) { ?>
 		<div id="headline">

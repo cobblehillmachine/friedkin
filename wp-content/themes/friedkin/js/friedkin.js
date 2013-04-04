@@ -8,11 +8,13 @@ $(document).ready(function() {
 	$('p').eq(0).addClass('first').end();
 	$(".sub-cont:last").each(function(){$(this).addClass("last")});
 	showSubnav();
+	fullScreen();
 	
 });
 
 $(window).resize(function() {
 	footerHeight();
+	fullScreen();
 });
 
 $(window).load(function() {
@@ -35,4 +37,9 @@ function showSubnav() {
 		mouseenter: function(){$('#menu-item-17 .sub-menu').slideToggle();},
 		mouseleave: function(){$('#menu-item-17 .sub-menu').slideToggle();}
 	});
+}
+
+function fullScreen(){
+	var FullscreenrOptions = { width: 1280, height: 1024, bgID: '#banner img' };
+	jQuery.fn.fullscreenr(FullscreenrOptions);
 }
