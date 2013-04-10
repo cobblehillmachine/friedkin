@@ -17,7 +17,7 @@
 		<a id="footer-logo" href="/"></a>
 		<div id="address-cont">
 			<span><a href="http://maps.google.com/maps?q=807+brazos+street+austin+tx&oe=utf-8&client=firefox-a&hnear=807+Brazos+St,+Austin,+Travis,+Texas+78701&gl=us&t=m&z=16" target="_blank" class="address">807 Brazos St, Suite 801</br>Austin, TX 78701</a></span>	
-			<span>555-555-5555</br><a href="mailto:email@emailaddress.com">email@emailaddress.com</a></span>
+			<span>512.320.8600</br><a href="mailto:email@emailaddress.com">email@emailaddress.com</a></span>
 		</div>
 		<a id="site-credit" href="http://cobblehilldigital.com" target="_blank">Site by Cobble Hill</a>
 	</div>
