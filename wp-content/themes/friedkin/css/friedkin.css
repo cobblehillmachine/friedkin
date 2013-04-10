@@ -7,8 +7,8 @@ input {webkit-appearance:none;}
 p {margin:0 0 25px 0; float:left;}
 textarea { overflow: auto; }
 .mid-cont {position:relative; width:970px; margin:auto;}
-#header, #main-wrapper, #footer, #banner, #headline {float:left; width:100%;}
-#banner {height:335px; background-size:cover !important;}
+#header, #main-wrapper, #footer, #banner, #headline, .slide {float:left; width:100%;}
+#banner, .slide {height:335px; background-size:cover !important;}
 #home #banner {height:410px;}
 #headline {height:60px; background:#137139; color:#fff; font-size:30px; padding-top:20px;}
 #main-wrapper {padding:40px 0;}
@@ -46,7 +46,7 @@ textarea { overflow: auto; }
 /*HOME*/
 #home-headline {font-size:48px; color:#fff; float:left; margin-top:200px;}
 .home-box {float:left; width:290px; margin:20px 35px 0 0;}
-.home-box .content {min-height:105px;}
+.home-box .content {min-height:145px;}
 
 /*BACKGROUND*/
 #background .wrap {float:left; width:620px;}

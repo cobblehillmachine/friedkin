@@ -34,7 +34,7 @@ footer.css({'height':height});
 function showSubnav() {
 	
 	$('#menu-item-17').live({
-		mouseenter: function(){$('#menu-item-17 .sub-menu').slideToggle();},
-		mouseleave: function(){$('#menu-item-17 .sub-menu').slideToggle();}
+		mouseenter: function(){$('#menu-item-17 .sub-menu').show();},
+		mouseleave: function(){$('#menu-item-17 .sub-menu').hide();}
 	});
 }

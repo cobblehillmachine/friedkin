@@ -89,7 +89,20 @@
 			<?php } ?>
 		</div>		
 	</div>
+	<!-- <?php// if (is_front_page()) { ?>
+		<?php// query_posts(array('post_type' => 'Home Slideshow', 'order' => 'DESC', 'orderby'   => 'menu_order', 'posts_per_page' => 10)); ?>
+			<?php// $count = 0; while ( have_posts() ) : the_post(); ?>
+					<?php// if (has_post_thumbnail( $post->ID ) ): ?>
+					<?php// $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+					<div class="slide <?php $count ?>" style="background-image: url('<?php echo $image[0]; ?>')">
+
+					</div>
+					<?php// $count++; endif; ?>
+			<?php// endwhile; wp_reset_query();?>
+
+	<?php //} else { ?> -->
 	<div id="banner" style="background: url('<?php echo $thumbnail; ?>') no-repeat;"></div>
+	<!-- <?php// } ?> -->
 	<?php if (!is_front_page()) { ?>
 		<?php if (get_post_meta($post->ID, 'headline', true)) { ?>
 		<div id="headline">
@@ -109,5 +122,4 @@
 	<div id="main-wrapper">
 		<div class="mid-cont">
 	
-
 
