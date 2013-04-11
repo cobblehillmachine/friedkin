@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	window.scrollTo(0, 1);
 	footerHeight();
+	$('#slider').cycle();
 	$("#nav li:first").each(function(){$(this).addClass("first")});
 	$('.home-box, #philosophy .sub-cont').eq(2).addClass('last').end();
 	$('p').each(function(i) {if ((i + 1) % 2 == 0) {$(this).addClass('even');}});

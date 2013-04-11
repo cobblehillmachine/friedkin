@@ -7,7 +7,8 @@ input {webkit-appearance:none;}
 p {margin:0 0 25px 0; float:left;}
 textarea { overflow: auto; }
 .mid-cont {position:relative; width:970px; margin:auto;}
-#header, #main-wrapper, #footer, #banner, #headline, .slide {float:left; width:100%;}
+#header, #main-wrapper, #footer, #banner, #headline, #slider, .slide {float:left; width:100% !important;}
+#slider {z-index:-1;}
 #banner, .slide {height:335px; background-size:cover !important;}
 #home #banner {height:410px;}
 #headline {height:60px; background:#137139; color:#fff; font-size:30px; padding-top:20px;}
@@ -44,7 +45,7 @@ textarea { overflow: auto; }
 #site-credit {float:right; margin-top:40px;}
 
 /*HOME*/
-#home-headline {font-size:48px; color:#fff; float:left; margin-top:200px;}
+#home-headline {font-size:48px; color:#fff; float:left; margin-top:170px;}
 .home-box {float:left; width:290px; margin:20px 35px 0 0;}
 .home-box .content {min-height:145px;}
 
